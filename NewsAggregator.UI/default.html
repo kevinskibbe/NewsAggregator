@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <link rel="stylesheet" type="text/css" href="/assets/styles.css">
+    <script src="https://code.angularjs.org/1.2.5/angular.js"></script>
+    <script src="https://code.angularjs.org/1.2.5/angular-resource.js"></script>
+    <script src="/app/app.js"></script>
+    <script src="/app/components/home/articlecontrollers.js"></script>
+    <script src="/app/components/home/articleservice.js"></script>
+    <script src="/app/components/home/articledirective.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            Lost in the Center
+        </div>
+        <div class="subheader">
+            News from both sides of the aisle
+        </div>
+        <div class="clear"></div>
+        <div class="category">
+            <!-- WORLD -->
+            <div class="left">
+                <div ng-controller="leftWorldController">
+                    <div article-directive></div>
+                </div>
+            </div>
+            <div class="right">
+                <div ng-controller="rightWorldController">
+                    <div article-directive></div>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <div class="category">
+            <!-- US -->
+            <div class="left">
+                <div ng-controller="leftUSController">
+                    <div article-directive></div>
+                </div>
+            </div>
+            <div class="right">
+                <div ng-controller="rightUSController">
+                    <div article-directive></div>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <div class="category">
+            <!-- POLITICS -->
+            <div class="left">
+                <div ng-controller="leftPoliticsController">
+                    <div article-directive></div>
+                </div>
+            </div>
+            <div class="right">
+                <div ng-controller="rightPoliticsController">
+                    <div article-directive></div>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <div class="category">
+            <!-- OPINION -->
+            <div class="left">
+                <div ng-controller="leftOpinionController">
+                    <div article-directive></div>
+                </div>
+            </div>
+            <div class="right">
+                <div ng-controller="rightOpinionController">
+                    <div article-directive></div>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <div class="category">
+            <!-- SPORTS -->
+            <div class="left">
+                <div ng-controller="leftSportsController">
+                    <div article-directive></div>
+                </div>
+            </div>
+            <div class="right">
+                <div ng-controller="rightSportsController">
+                    <div article-directive></div>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <div class="category">
+            <!-- ENTERTAINMENT -->
+            <div class="left">
+                <div ng-controller="leftEntertainmentController">
+                    <div article-directive></div>
+                </div>
+            </div>
+            <div class="right">
+                <div ng-controller="rightEntertainmentController">
+                    <div article-directive></div>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <div class="footer"><a href="http://www.freeprivacypolicy.org/generic.php" target="_blank">Privacy Policy</a></div>
+    </div>
+</body>
+</html>

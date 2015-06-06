@@ -1,0 +1,15 @@
+<h2 class="categoryheader">{{articleSection.header}}</h2>
+<ul>
+    <li ng-repeat="article in articleSection.articles">
+        <a href="{{article.Link}}" target="_blank">{{article.Headline}}</a>
+        <span class="byline">{{article.Source.OutletName}}</span>
+        <span class="byline">--</span>
+        <span class="byline italics">{{formatDate(article.Dateline)}}</span>
+    </li>
+</ul>
+<div ng-if="articleSection.moreAvailable">
+    <span class="showmemore"><a ng-href="#here" ng-click="more()">Show me more...</a></span>
+</div>
+<div ng-if="!articleSection.moreAvailable">
+    <span class="showmemore">That's all, folks...</span>
+</div>
