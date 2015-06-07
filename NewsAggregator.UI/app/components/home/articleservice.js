@@ -3,7 +3,7 @@ var defaultIncrement = 5;
 
 app.service('articleService', function ($resource) {
     this.getArticles = function (viewpoint, category, count, callback) {
-        $resource('http://localhost:64734/article/get/' + viewpoint + '/' + category + '/' + count).query(function (articles) {
+        $resource('http://kevinskibbe-001-site1.smarterasp.net/article/get/' + viewpoint + '/' + category + '/' + count).query(function (articles) {
             callback(articles);
         });
     };
